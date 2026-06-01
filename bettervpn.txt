@@ -1,5 +1,5 @@
-# profile-title: МОЙ ВПН
-# profile-update-interval: 1
+profile-title: МОЙ ВПН
+profile-update-interval: 1
 vless://23bdeba2-5e59-43d3-a770-b23a52200e18@5.175.141.9:2095?path=%2F&security=none&encryption=none&host=g.nargil01.site&type=httpupgrade#vless1
 vless://19804f6b-3661-4eca-b294-ba37196dab5b@129.6.29.255:443?path=%2Fid-tksi&security=tls&encryption=none&alpn=http/1.1&echfq=none&host=graph.instagram.com.cyylr.eu.cc&fp=chrome&allowinsecure=0&type=ws&sni=graph.instagram.com.cyylr.eu.cc#vless2
 vless://cc752a3e-1537-4e86-bb50-1b897bf7b33c@202.37.33.80:443?path=%2Fsg-melbi&security=tls&encryption=none&alpn=http/1.1&echfq=none&host=cyylr.eu.cc&fp=chrome&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&allowinsecure=0&type=ws&sni=cyylr.eu.cc#vless3
@@ -7,3 +7,4 @@ vless://cc752a3e-1537-4e86-bb50-1b897bf7b33c@202.37.33.80:443?path=%2Fsg-melbi&s
 vless://19804f6b-3661-4eca-b294-ba37196dab5b@129.6.29.255:443?path=%2Fid-tksi&security=tls&encryption=none&alpn=http/1.1&echfq=none&host=graph.instagram.com.cyylr.eu.cc&fp=chrome&allowinsecure=0&type=ws&sni=graph.instagram.com.cyylr.eu.cc#vless5
 vless://cc752a3e-1537-4e86-bb50-1b897bf7b33c@202.37.33.80:443?path=%2Fsg-melbi&security=tls&encryption=none&alpn=http/1.1&echfq=none&host=cyylr.eu.cc&fp=chrome&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&allowinsecure=0&type=ws&sni=cyylr.eu.cc#vless6
 vless://cc752a3e-1537-4e86-bb50-1b897bf7b33c@202.37.33.80:443?path=%2Fsg-melbi&security=tls&encryption=none&alpn=http/1.1&echfq=none&host=cyylr.eu.cc&fp=chrome&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&allowinsecure=0&type=ws&sni=cyylr.eu.cc#vless7
+vless://10132cf6-6536-4c45-8d75-c90f91a1c5d6@37.139.34.63:5969?mode=auto&path=%2Fbridge-xhttp&security=reality&encryption=none&pbk=lPTd0_SulMMhWfRHF4tjsv5iM06hU1bDJv8aPaBipEw&fp=chrome&allowinsecure=0&type=xhttp&sni=surfvpn24.ru&sid=c19de8fa#%F0%9F%87%B7%F0%9F%87%BA+Russia+%5B*CIDR%5D+VK
