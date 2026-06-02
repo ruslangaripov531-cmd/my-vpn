@@ -1,1 +1,7 @@
 trojan://humanity@198.62.62.23:443?security=tls&sni=www.calmlunch.com&insecure=0&allowInsecure=0&type=ws&host=www.calmlunch.com&path=%2Fassignment#%F0%9F%87%BA%F0%9F%87%B8US%E5%8C%97%E7%BE%8E
+vless://ba2630d8-d6c4-49ff-b5d5-2c24330dd245@155.212.161.153:2096?encryption=none&security=reality&sni=id.vk.com&fp=chrome&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&type=grpc&authority=&serviceName=vless-grpc-reality&mode=gun#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D
+vless://ba2630d8-d6c4-49ff-b5d5-2c24330dd245@155.212.162.49:2096?encryption=none&security=reality&sni=id.vk.com&fp=chrome&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&type=grpc&authority=&serviceName=vless-grpc-reality&mode=gun#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D
+vless://ba2630d8-d6c4-49ff-b5d5-2c24330dd245@212.109.194.140:2096?encryption=none&security=reality&sni=id.vk.com&fp=chrome&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&type=grpc&authority=&serviceName=vless-grpc-reality&mode=gun#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.149:8080?#filembad-16
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ@108.181.58.239:8388?#llFreak
+
