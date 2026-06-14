@@ -1,0 +1,93 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "dns": {
+    "servers": [
+      "8.8.8.8",
+      "1.1.1.1"
+    ]
+  },
+  "inbounds": [
+    {
+      "interface": "any",
+      "protocol": "tun",
+      "settings": {
+        "address": [
+          "10.0.0.1/24"
+        ],
+        "mtu": 1500,
+        "stack": "system",
+        "platform": {
+          "linux": {
+            "autoRoute": true
+          },
+          "windows": {
+            "autoRoute": true
+          }
+        }
+      },
+      "tag": "tun-in"
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "bg1.fulli.net",
+            "port": 443,
+            "users": [
+              {
+                "id": "67326efc-ab62-46bf-964e-0f1672ede938",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "bg1.fulli.net",
+          "fingerprint": "chrome",
+          "alpn": ["h2"]
+        },
+        "xhttpSettings": {
+          "path": "/restserver/backend/api",
+          "mode": "auto"
+        }
+      },
+      "tag": "proxy"
+    },
+    {
+      "protocol": "freedom",
+      "settings": {},
+      "tag": "direct"
+    },
+    {
+      "protocol": "dns",
+      "tag": "dns-out"
+    }
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "outboundTag": "dns-out",
+        "port": 53,
+        "protocol": [
+          "udp"
+        ]
+      },
+      {
+        "inboundTag": [
+          "tun-in"
+        ],
+        "outboundTag": "proxy"
+      }
+    ]
+  }
+}
