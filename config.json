@@ -28,21 +28,21 @@
     {
       "type": "vless",
       "tag": "proxy",
-      "server": "at1.fulli.net",
+      "server": "ru.fi1.fulli.net",
       "server_port": 443,
-      "uuid": "c039af04-84e3-497c-8c39-a020f18a9424",
+      "uuid": "3ad285a1-9a47-440f-8f6a-03bd1454c075",
       "tls": {
         "enabled": true,
-        "server_name": "at1.fulli.net",
+        "server_name": "ru.fi1.fulli.net",
         "alpn": ["h2"],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "xhttp",
-        "path": "/backapi/express/data",
+        "path": "/enveloop/api",
         "x_padding_bytes": "100-1000"
       }
     },
