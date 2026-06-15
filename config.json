@@ -21,8 +21,7 @@
       "mtu": 9000,
       "auto_route": true,
       "strict_route": true,
-      "stack": "system",
-      "sniff": true
+      "stack": "system"
     }
   ],
   "outbounds": [
@@ -54,6 +53,9 @@
   ],
   "route": {
     "rules": [
+      {
+        "action": "sniff"
+      },
       {
         "ip_is_private": true,
         "outbound": "direct"
