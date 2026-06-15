@@ -1,308 +1,80 @@
-Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0 (go1.26.1 linux/amd64)
-A unified platform for anti-censorship.
-2026/06/15 09:50:46.152658 [Info] infra/conf/serial: Reading config: &{Name:/home/ruslan/xrayvpn/config.json Format:json}
-2026/06/15 09:50:46.154500 [Warning] core: Xray 26.3.27 started
-2026/06/15 10:05:47.235048 from tcp:127.0.0.1:44436 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:47.235155 from tcp:127.0.0.1:44404 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:47.235180 from tcp:127.0.0.1:44452 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:47.235195 from tcp:127.0.0.1:44420 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:47.235208 from tcp:127.0.0.1:44450 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:47.264347 from tcp:127.0.0.1:44454 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:47.264383 from tcp:127.0.0.1:44456 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:47.604595 from tcp:127.0.0.1:44472 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:47.604667 from tcp:127.0.0.1:44470 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:49.299394 from tcp:127.0.0.1:44490 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:49.299434 from tcp:127.0.0.1:44492 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:50.958055 from tcp:127.0.0.1:44502 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:50.958127 from tcp:127.0.0.1:44504 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:50.958382 from tcp:127.0.0.1:44516 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:54.900426 from tcp:127.0.0.1:44524 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:54.900461 from tcp:127.0.0.1:44526 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:55.804529 from tcp:127.0.0.1:44550 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:55.804568 from tcp:127.0.0.1:44572 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:55.804682 from tcp:127.0.0.1:44556 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.237218 from tcp:127.0.0.1:41602 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.237328 from tcp:127.0.0.1:41640 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.237361 from tcp:127.0.0.1:41564 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.237404 from tcp:127.0.0.1:41666 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.240287 from tcp:127.0.0.1:41576 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.240353 from tcp:127.0.0.1:41570 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.240377 from tcp:127.0.0.1:41588 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.240901 from tcp:127.0.0.1:41556 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.240965 from tcp:127.0.0.1:41546 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.240992 from tcp:127.0.0.1:41616 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.241649 from tcp:127.0.0.1:41544 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.241830 from tcp:127.0.0.1:41656 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.241877 from tcp:127.0.0.1:41630 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.244307 from tcp:127.0.0.1:41670 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.244366 from tcp:127.0.0.1:41686 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.265955 from tcp:127.0.0.1:41724 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.266140 from tcp:127.0.0.1:41752 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.266159 from tcp:127.0.0.1:41736 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.266355 from tcp:127.0.0.1:41788 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.266516 from tcp:127.0.0.1:41712 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.266531 from tcp:127.0.0.1:41696 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.266550 from tcp:127.0.0.1:41762 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.266567 from tcp:127.0.0.1:41768 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.266573 from tcp:127.0.0.1:41698 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.266752 from tcp:127.0.0.1:41800 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.266793 from tcp:127.0.0.1:41780 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.266801 from tcp:127.0.0.1:41796 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.267023 from tcp:127.0.0.1:41806 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.267093 from tcp:127.0.0.1:41810 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.614168 from tcp:127.0.0.1:41816 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:57.614233 from tcp:127.0.0.1:41818 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:59.309158 from tcp:127.0.0.1:41832 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:59.309185 from tcp:127.0.0.1:41830 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:59.906931 from tcp:127.0.0.1:41856 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:05:59.907018 from tcp:127.0.0.1:41846 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.809721 from tcp:127.0.0.1:41872 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.810255 from tcp:127.0.0.1:41882 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.810300 from tcp:127.0.0.1:41890 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.969216 from tcp:127.0.0.1:41904 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.969290 from tcp:127.0.0.1:41902 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.988054 from tcp:127.0.0.1:41918 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.988315 from tcp:127.0.0.1:41916 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.990331 from tcp:127.0.0.1:41942 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.990550 from tcp:127.0.0.1:41962 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.991569 from tcp:127.0.0.1:42014 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.991755 from tcp:127.0.0.1:42028 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.991773 from tcp:127.0.0.1:41952 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.991779 from tcp:127.0.0.1:42020 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.991785 from tcp:127.0.0.1:42008 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.992073 from tcp:127.0.0.1:42012 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.992879 from tcp:127.0.0.1:42062 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.993995 from tcp:127.0.0.1:41936 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.994053 from tcp:127.0.0.1:41980 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.994061 from tcp:127.0.0.1:41978 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.994065 from tcp:127.0.0.1:42042 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.994068 from tcp:127.0.0.1:42044 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.994071 from tcp:127.0.0.1:41990 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:00.994249 from tcp:127.0.0.1:42000 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:02.248834 from tcp:127.0.0.1:42068 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:02.249079 from tcp:127.0.0.1:42072 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:05.851128 from tcp:127.0.0.1:42086 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:05.851182 from tcp:127.0.0.1:42116 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:05.851190 from tcp:127.0.0.1:42088 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:05.918404 from tcp:127.0.0.1:42130 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:05.918444 from tcp:127.0.0.1:42132 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.270899 from tcp:127.0.0.1:54096 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.270976 from tcp:127.0.0.1:54042 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.271138 from tcp:127.0.0.1:54076 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.271159 from tcp:127.0.0.1:54050 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.271296 from tcp:127.0.0.1:54236 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.271395 from tcp:127.0.0.1:54088 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.271508 from tcp:127.0.0.1:54204 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.271522 from tcp:127.0.0.1:54064 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.271768 from tcp:127.0.0.1:54000 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.271875 from tcp:127.0.0.1:54196 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.272108 from tcp:127.0.0.1:54036 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.274358 from tcp:127.0.0.1:54270 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.274408 from tcp:127.0.0.1:54030 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.274421 from tcp:127.0.0.1:54186 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.274430 from tcp:127.0.0.1:54090 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.274438 from tcp:127.0.0.1:54272 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.274446 from tcp:127.0.0.1:54298 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.274453 from tcp:127.0.0.1:54002 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.274461 from tcp:127.0.0.1:54312 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.274468 from tcp:127.0.0.1:54094 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.274476 from tcp:127.0.0.1:54300 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.274484 from tcp:127.0.0.1:54324 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.274491 from tcp:127.0.0.1:54258 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.274599 from tcp:127.0.0.1:54336 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.274624 from tcp:127.0.0.1:54352 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.275578 from tcp:127.0.0.1:54394 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.275626 from tcp:127.0.0.1:54126 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.275637 from tcp:127.0.0.1:54114 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.275644 from tcp:127.0.0.1:54348 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.275651 from tcp:127.0.0.1:54402 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.275658 from tcp:127.0.0.1:54404 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.275666 from tcp:127.0.0.1:54288 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.275674 from tcp:127.0.0.1:54140 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.275682 from tcp:127.0.0.1:54382 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.275692 from tcp:127.0.0.1:54244 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.275700 from tcp:127.0.0.1:54220 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.275959 from tcp:127.0.0.1:54414 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.275991 from tcp:127.0.0.1:54406 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.276324 from tcp:127.0.0.1:54308 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.276543 from tcp:127.0.0.1:54356 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.276594 from tcp:127.0.0.1:54306 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.276616 from tcp:127.0.0.1:54372 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.276621 from tcp:127.0.0.1:54170 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.276804 from tcp:127.0.0.1:54156 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.277956 from tcp:127.0.0.1:54430 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.624865 from tcp:127.0.0.1:54436 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:07.625236 from tcp:127.0.0.1:54438 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:09.366990 from tcp:127.0.0.1:54452 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:09.367065 from tcp:127.0.0.1:54454 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:09.917903 from tcp:127.0.0.1:54464 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:09.917985 from tcp:127.0.0.1:54466 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:10.819679 from tcp:127.0.0.1:54496 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:10.819766 from tcp:127.0.0.1:54484 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:10.855916 from tcp:127.0.0.1:54500 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:10.856020 from tcp:127.0.0.1:54502 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:10.862539 from tcp:127.0.0.1:54508 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:10.923724 from tcp:127.0.0.1:54514 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:10.923882 from tcp:127.0.0.1:54516 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:12.259333 from tcp:127.0.0.1:54538 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:12.259406 from tcp:127.0.0.1:54536 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:17.273875 from tcp:127.0.0.1:60346 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:17.274074 from tcp:127.0.0.1:60416 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:17.274094 from tcp:127.0.0.1:60408 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:17.274101 from tcp:127.0.0.1:60342 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:17.274107 from tcp:127.0.0.1:60374 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:17.274112 from tcp:127.0.0.1:60344 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:17.274117 from tcp:127.0.0.1:60440 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:17.274122 from tcp:127.0.0.1:60382 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:17.274274 from tcp:127.0.0.1:60394 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:17.274354 from tcp:127.0.0.1:60450 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:17.274438 from tcp:127.0.0.1:60428 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:17.274448 from tcp:127.0.0.1:60462 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:17.634744 from tcp:127.0.0.1:60472 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:17.634930 from tcp:127.0.0.1:60484 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:19.376197 from tcp:127.0.0.1:60492 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:19.376226 from tcp:127.0.0.1:60494 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:20.865529 from tcp:127.0.0.1:60500 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:20.865558 from tcp:127.0.0.1:60506 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:22.270095 from tcp:127.0.0.1:60510 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:22.270168 from tcp:127.0.0.1:60508 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:27.275782 from tcp:127.0.0.1:59698 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:27.277121 from tcp:127.0.0.1:59714 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:27.277664 from tcp:127.0.0.1:59744 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:27.277732 from tcp:127.0.0.1:59732 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:27.278110 from tcp:127.0.0.1:59764 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:27.278147 from tcp:127.0.0.1:59722 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:27.278165 from tcp:127.0.0.1:59748 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:27.278642 from tcp:127.0.0.1:59774 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:27.644990 from tcp:127.0.0.1:59790 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:27.645295 from tcp:127.0.0.1:59794 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:29.418821 from tcp:127.0.0.1:59800 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:29.418892 from tcp:127.0.0.1:59798 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:37.279534 from tcp:127.0.0.1:41658 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:37.279627 from tcp:127.0.0.1:41688 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:37.279652 from tcp:127.0.0.1:41678 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:37.279676 from tcp:127.0.0.1:41660 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:37.280475 from tcp:127.0.0.1:41686 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:37.280712 from tcp:127.0.0.1:41676 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:37.282674 from tcp:127.0.0.1:41694 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:37.282855 from tcp:127.0.0.1:41692 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:37.655927 from tcp:127.0.0.1:41706 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:37.656008 from tcp:127.0.0.1:41704 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:39.428456 from tcp:127.0.0.1:41748 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:39.428508 from tcp:127.0.0.1:41734 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:47.283185 from tcp:127.0.0.1:33208 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:47.283225 from tcp:127.0.0.1:33244 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:47.283231 from tcp:127.0.0.1:33204 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:47.283234 from tcp:127.0.0.1:33230 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:47.283237 from tcp:127.0.0.1:33184 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:47.283241 from tcp:127.0.0.1:33242 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:47.283244 from tcp:127.0.0.1:33206 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:47.283247 from tcp:127.0.0.1:33186 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:47.666430 from tcp:127.0.0.1:33262 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:47.666491 from tcp:127.0.0.1:33260 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:49.575734 from tcp:127.0.0.1:33294 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:49.575800 from tcp:127.0.0.1:33282 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:57.284071 from tcp:127.0.0.1:38702 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:57.284158 from tcp:127.0.0.1:38696 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:57.286223 from tcp:127.0.0.1:38742 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:57.286357 from tcp:127.0.0.1:38720 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:57.286369 from tcp:127.0.0.1:38718 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:57.286570 from tcp:127.0.0.1:38748 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:57.286622 from tcp:127.0.0.1:38770 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:57.286628 from tcp:127.0.0.1:38762 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:57.676947 from tcp:127.0.0.1:38784 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:57.677049 from tcp:127.0.0.1:38774 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:59.584960 from tcp:127.0.0.1:38796 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:06:59.585018 from tcp:127.0.0.1:38798 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:07.287640 from tcp:127.0.0.1:33956 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:07.288100 from tcp:127.0.0.1:33958 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:07.288118 from tcp:127.0.0.1:33982 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:07.288129 from tcp:127.0.0.1:33992 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:07.288259 from tcp:127.0.0.1:34000 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:07.288280 from tcp:127.0.0.1:34004 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:07.288400 from tcp:127.0.0.1:34020 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:07.288534 from tcp:127.0.0.1:34024 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:07.685762 from tcp:127.0.0.1:34032 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:07.685800 from tcp:127.0.0.1:34034 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:09.857341 from tcp:127.0.0.1:34050 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:09.857419 from tcp:127.0.0.1:34062 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:17.290277 from tcp:127.0.0.1:53600 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:17.290780 from tcp:127.0.0.1:53588 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:17.292358 from tcp:127.0.0.1:53630 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:17.293147 from tcp:127.0.0.1:53616 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:17.293212 from tcp:127.0.0.1:53638 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:17.293234 from tcp:127.0.0.1:53654 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:17.294386 from tcp:127.0.0.1:53670 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:17.294585 from tcp:127.0.0.1:53660 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:17.697190 from tcp:127.0.0.1:53680 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:17.697243 from tcp:127.0.0.1:53674 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:19.867435 from tcp:127.0.0.1:53684 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:19.867489 from tcp:127.0.0.1:53686 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:21.957988 from tcp:127.0.0.1:53696 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:21.958052 from tcp:127.0.0.1:53694 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:21.958074 from tcp:127.0.0.1:53698 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:27.293294 from tcp:127.0.0.1:45492 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:27.293333 from tcp:127.0.0.1:45482 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:27.293340 from tcp:127.0.0.1:45480 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:27.293448 from tcp:127.0.0.1:45496 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:27.293472 from tcp:127.0.0.1:45502 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:27.293493 from tcp:127.0.0.1:45508 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:27.293500 from tcp:127.0.0.1:45518 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:27.293830 from tcp:127.0.0.1:45520 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:27.293851 from tcp:127.0.0.1:45530 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:27.294083 from tcp:127.0.0.1:45560 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:27.294106 from tcp:127.0.0.1:45544 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:27.707914 from tcp:127.0.0.1:45570 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:27.708009 from tcp:127.0.0.1:45566 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:30.099587 from tcp:127.0.0.1:45584 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:30.099648 from tcp:127.0.0.1:45582 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:31.967842 from tcp:127.0.0.1:45600 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:31.967910 from tcp:127.0.0.1:45608 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:37.297354 from tcp:127.0.0.1:48060 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:37.297507 from tcp:127.0.0.1:48050 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:37.297533 from tcp:127.0.0.1:48054 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:37.297548 from tcp:127.0.0.1:48062 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:37.297755 from tcp:127.0.0.1:48064 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:37.297979 from tcp:127.0.0.1:48058 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:37.298382 from tcp:127.0.0.1:48090 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:37.299565 from tcp:127.0.0.1:48078 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:37.299618 from tcp:127.0.0.1:48096 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:37.299640 from tcp:127.0.0.1:48098 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:37.717746 from tcp:127.0.0.1:48110 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:37.717800 from tcp:127.0.0.1:48112 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:40.109688 from tcp:127.0.0.1:48134 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:40.109752 from tcp:127.0.0.1:48118 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:47.299064 from tcp:127.0.0.1:50800 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:47.299100 from tcp:127.0.0.1:50816 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:47.302440 from tcp:127.0.0.1:50830 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:47.302487 from tcp:127.0.0.1:50864 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:47.302494 from tcp:127.0.0.1:50852 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:47.302949 from tcp:127.0.0.1:50832 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:47.304084 from tcp:127.0.0.1:50876 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:47.304724 from tcp:127.0.0.1:50878 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:47.727375 from tcp:127.0.0.1:50892 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:47.727412 from tcp:127.0.0.1:50894 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:50.323894 from tcp:127.0.0.1:50902 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:50.324067 from tcp:127.0.0.1:50904 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:57.305272 from tcp:127.0.0.1:46348 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:57.305765 from tcp:127.0.0.1:46346 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:57.307177 from tcp:127.0.0.1:46378 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:57.307225 from tcp:127.0.0.1:46380 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:57.307490 from tcp:127.0.0.1:46360 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:57.307540 from tcp:127.0.0.1:46384 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:57.307560 from tcp:127.0.0.1:46366 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:57.307686 from tcp:127.0.0.1:46400 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:57.737671 from tcp:127.0.0.1:46412 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:07:57.737827 from tcp:127.0.0.1:46406 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:08:00.334069 from tcp:127.0.0.1:46428 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:08:00.334337 from tcp:127.0.0.1:46430 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:08:07.311643 from tcp:127.0.0.1:42404 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:08:07.312633 from tcp:127.0.0.1:42432 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:08:07.312708 from tcp:127.0.0.1:42406 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:08:07.312736 from tcp:127.0.0.1:42440 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:08:07.313729 from tcp:127.0.0.1:42390 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:08:07.314665 from tcp:127.0.0.1:42396 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:08:07.315771 from tcp:127.0.0.1:42452 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:08:07.315814 from tcp:127.0.0.1:42448 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:08:07.749423 from tcp:127.0.0.1:42472 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
-2026/06/15 10:08:07.749489 from tcp:127.0.0.1:42460 accepted tcp:1.1.1.1:853 [socks-in -> proxy]
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "socks-in",
+      "port": 1080,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "tag": "http-in",
+      "port": 2080,
+      "listen": "127.0.0.1",
+      "protocol": "http",
+      "settings": {}
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "bg1.fulli.net",
+            "port": 443,
+            "users": [
+              {
+                "id": "67326efc-ab62-46bf-964e-0f1672ede938",
+                "encryption": "none",
+                "level": 0
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "xhttpSettings": {
+          "path": "/"
+        }
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole",
+      "settings": {}
+    }
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "socks-in",
+          "http-in"
+        ],
+        "outboundTag": "proxy"
+      }
+    ]
+  }
