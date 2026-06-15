@@ -6,18 +6,22 @@
   "dns": {
     "servers": [
       {
+        "type": "tls",
         "tag": "dns-remote",
-        "address": "tls://8.8.8.8",
+        "server": "8.8.8.8",
         "detour": "proxy"
       },
       {
-        "tag": "dns-local",
-        "address": "local",
-        "detour": "direct"
+        "type": "local",
+        "tag": "dns-local"
       }
     ],
     "rules": [
-      { "outbound": "any", "server": "dns-local" }
+      {
+        "outbound": "any",
+        "action": "route",
+        "server": "dns-local"
+      }
     ],
     "strategy": "ipv4_only"
   },
@@ -56,13 +60,14 @@
       }
     },
     { "type": "direct", "tag": "direct" },
-    { "type": "block", "tag": "block" },
-    { "type": "dns", "tag": "dns-out" }
+    { "type": "block", "tag": "block" }
   ],
   "route": {
     "rules": [
-      { "protocol": "dns", "outbound": "dns-out" },
-      { "ip_is_private": true, "outbound": "direct" }
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      }
     ],
     "auto_detect_interface": true,
     "final": "proxy"
