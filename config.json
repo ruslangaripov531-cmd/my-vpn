@@ -3,6 +3,14 @@
     "level": "info",
     "timestamp": true
   },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090"
+    },
+    "cache_file": {
+      "enabled": true
+    }
+  },
   "dns": {
     "servers": [
       {
@@ -26,8 +34,88 @@
   ],
   "outbounds": [
     {
-      "type": "vless",
+      "type": "selector",
       "tag": "proxy",
+      "outbounds": [
+        "austria",
+        "france",
+        "finland",
+        "netherlands",
+        "germany",
+        "uk",
+        "sweden",
+        "switzerland",
+        "russia",
+        "argentina",
+        "usa",
+        "auto"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "austria",
+        "france",
+        "finland",
+        "netherlands",
+        "germany",
+        "uk",
+        "sweden",
+        "switzerland",
+        "russia",
+        "argentina",
+        "usa"
+      ],
+      "url": "https://www.youtube.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vless",
+      "tag": "austria",
+      "server": "at1.fulli.net",
+      "server_port": 443,
+      "uuid": "c039af04-84e3-497c-8c39-a020f18a9424",
+      "tls": {
+        "enabled": true,
+        "server_name": "at1.fulli.net",
+        "alpn": ["h2"],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "xhttp",
+        "path": "/backapi/express/data",
+        "x_padding_bytes": "100-1000"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "france",
+      "server": "ru.fr1.fulli.net",
+      "server_port": 443,
+      "uuid": "344fb5b3-0ffc-4135-bcd3-882742d2a017",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru.fr1.fulli.net",
+        "alpn": ["h2"],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "xhttp",
+        "path": "/maxbot/api",
+        "x_padding_bytes": "100-1000"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "finland",
       "server": "ru.fi1.fulli.net",
       "server_port": 443,
       "uuid": "3ad285a1-9a47-440f-8f6a-03bd1454c075",
@@ -43,6 +131,172 @@
       "transport": {
         "type": "xhttp",
         "path": "/enveloop/api",
+        "x_padding_bytes": "100-1000"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "netherlands",
+      "server": "ru.nl1.fulli.net",
+      "server_port": 443,
+      "uuid": "9a746b0b-855a-426a-8119-5c6fd7077bb4",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru.nl1.fulli.net",
+        "alpn": ["h2"],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      },
+      "transport": {
+        "type": "xhttp",
+        "path": "/socketapi/backend",
+        "x_padding_bytes": "100-1000"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "germany",
+      "server": "ru.de1.fulli.net",
+      "server_port": 443,
+      "uuid": "b7db799d-3323-428f-93df-204a025b355e",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru.de1.fulli.net",
+        "alpn": ["h2"],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "desoapshop_api"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "uk",
+      "server": "gb3alpha.fulli.net",
+      "server_port": 443,
+      "uuid": "a6a8a93d-73a6-4ec1-9a6c-6174d4089e92",
+      "tls": {
+        "enabled": true,
+        "server_name": "gb3alpha.fulli.net",
+        "alpn": ["h2"],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "xhttp",
+        "path": "/greatapi/rest/user",
+        "x_padding_bytes": "100-1000"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "sweden",
+      "server": "ru.sw1.fulli.net",
+      "server_port": 443,
+      "uuid": "63c18500-709a-46d9-8aca-133b1700c641",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru.sw1.fulli.net",
+        "alpn": ["h2"],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "travelsochi_bot_api"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "switzerland",
+      "server": "ch1.fullivps.net",
+      "server_port": 443,
+      "uuid": "33f3f474-af4e-4bc5-8609-f4c4321bc507",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.quizora.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HQMrFgyWQmloG-pOuCkmqqSPjGVsggqV8QaSerm2cyk",
+          "short_id": "ef86687b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "russia",
+      "server": "ru1.fulli.net",
+      "server_port": 443,
+      "uuid": "3d0c08ea-1af9-4884-bd45-365483cc3828",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru1.fulli.net",
+        "alpn": ["h2"],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "veganmeat_bot_api"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "argentina",
+      "server": "ar1lode.fulli.net",
+      "server_port": 443,
+      "uuid": "79d4edd3-409b-42d3-a2fd-688b592d80c5",
+      "tls": {
+        "enabled": true,
+        "server_name": "ar1lode.fulli.net",
+        "alpn": ["h2"],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "xhttp",
+        "path": "/backend/api",
+        "mode": "auto",
+        "x_padding_bytes": "100-1000"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "usa",
+      "server": "ru.us1.fulli.net",
+      "server_port": 443,
+      "uuid": "5260896c-1569-4398-84a4-3b3e20e94472",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru.us1.fulli.net",
+        "alpn": ["h2"],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      },
+      "transport": {
+        "type": "xhttp",
+        "path": "/restapi/backend/admin",
         "x_padding_bytes": "100-1000"
       }
     },
