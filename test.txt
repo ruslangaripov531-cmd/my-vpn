@@ -1,1 +1,1 @@
-FATAL[0000] decode config at config.json: outbounds[0].transport: unknown transport type: xhttp
+FATAL[0000] decode config at config.json: outbounds[0].transport: x_padding_bytes cannot be disabled
