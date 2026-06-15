@@ -1,93 +1,70 @@
 {
   "log": {
-    "loglevel": "warning"
+    "level": "info",
+    "timestamp": true
   },
   "dns": {
     "servers": [
-      "8.8.8.8",
-      "1.1.1.1"
-    ]
+      {
+        "tag": "dns-remote",
+        "address": "tls://8.8.8.8",
+        "detour": "proxy"
+      },
+      {
+        "tag": "dns-local",
+        "address": "local",
+        "detour": "direct"
+      }
+    ],
+    "rules": [
+      { "outbound": "any", "server": "dns-local" }
+    ],
+    "strategy": "ipv4_only"
   },
   "inbounds": [
     {
-      "interface": "any",
-      "protocol": "tun",
-      "settings": {
-        "address": [
-          "10.0.0.1/24"
-        ],
-        "mtu": 1500,
-        "stack": "system",
-        "platform": {
-          "linux": {
-            "autoRoute": true
-          },
-          "windows": {
-            "autoRoute": true
-          }
-        }
-      },
-      "tag": "tun-in"
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "tun0",
+      "address": ["172.19.0.1/30", "fdfe:dcba:9876::1/126"],
+      "mtu": 9000,
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "system",
+      "sniff": true
     }
   ],
   "outbounds": [
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "bg1.fulli.net",
-            "port": 443,
-            "users": [
-              {
-                "id": "67326efc-ab62-46bf-964e-0f1672ede938",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "bg1.fulli.net",
-          "fingerprint": "chrome",
-          "alpn": ["h2"]
-        },
-        "xhttpSettings": {
-          "path": "/restserver/backend/api",
-          "mode": "auto"
+      "type": "vless",
+      "tag": "proxy",
+      "server": "at1.fulli.net",
+      "server_port": 443,
+      "uuid": "c039af04-84e3-497c-8c39-a020f18a9424",
+      "tls": {
+        "enabled": true,
+        "server_name": "at1.fulli.net",
+        "alpn": ["h2"],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         }
       },
-      "tag": "proxy"
-    },
-    {
-      "protocol": "freedom",
-      "settings": {},
-      "tag": "direct"
-    },
-    {
-      "protocol": "dns",
-      "tag": "dns-out"
-    }
-  ],
-  "routing": {
-    "domainStrategy": "AsIs",
-    "rules": [
-      {
-        "outboundTag": "dns-out",
-        "port": 53,
-        "protocol": [
-          "udp"
-        ]
-      },
-      {
-        "inboundTag": [
-          "tun-in"
-        ],
-        "outboundTag": "proxy"
+      "transport": {
+        "type": "xhttp",
+        "path": "/backapi/express/data"
       }
-    ]
+    },
+    { "type": "direct", "tag": "direct" },
+    { "type": "block", "tag": "block" },
+    { "type": "dns", "tag": "dns-out" }
+  ],
+  "route": {
+    "rules": [
+      { "protocol": "dns", "outbound": "dns-out" },
+      { "ip_is_private": true, "outbound": "direct" }
+    ],
+    "auto_detect_interface": true,
+    "final": "proxy"
   }
 }
