@@ -1,5 +1,2 @@
-  File "/home/ruslan/xrayvpn/xrayvpn.sh", line 109
-    xray) tail -f "$RUN_DIR/xray.log" ;;
-        ^
-SyntaxError: closing parenthesis ')' does not match opening parenthesis '{' on line 106
-
+ERROR[0000] missing `route.default_domain_resolver` or `domain_resolver` in dial fields is deprecated in sing-box 1.12.0 and will be removed in sing-box 1.14.0, checkout documentation for migration: https://sing-box.sagernet.org/migration/#migrate-outbound-dns-rule-items-to-domain-resolver
+FATAL[0000] to continuing using this feature, set environment variable ENABLE_DEPRECATED_MISSING_DOMAIN_RESOLVER=true
