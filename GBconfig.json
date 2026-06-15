@@ -1,0 +1,67 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "type": "local",
+        "tag": "dns-local"
+      }
+    ],
+    "final": "dns-local"
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "tun0",
+      "address": ["172.19.0.1/30", "fdfe:dcba:9876::1/126"],
+      "mtu": 9000,
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "system"
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "proxy",
+      "server": "gb3alpha.fulli.net",
+      "server_port": 443,
+      "uuid": "a6a8a93d-73a6-4ec1-9a6c-6174d4089e92",
+      "tls": {
+        "enabled": true,
+        "server_name": "gb3alpha.fulli.net",
+        "alpn": ["h2"],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "xhttp",
+        "path": "/greatapi/rest/user",
+        "x_padding_bytes": "100-1000"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      }
+    ],
+    "auto_detect_interface": true,
+    "final": "proxy"
+  }
+}
