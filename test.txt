@@ -1,1 +1,79 @@
 FATAL[0000] decode config at config.json: log.loglevel: json: unknown field "loglevel"
+[ruslan@notebook xrayvpn]$ sudo sing-box run -c config.json 
+FATAL[0000] decode config at config.json: log.loglevel: json: unknown field "loglevel"
+[ruslan@notebook xrayvpn]$ sudo sing-box run -c singbox-tun.json 
+ERROR[0011] [2415036807 10.0s] dns: exchange failed for ipv4only.arpa. IN A: context deadline exceeded
+ERROR[0011] [1296235373 10.0s] dns: exchange failed for detectportal.firefox.com. IN AAAA: context deadline exceeded
+ERROR[0011] [1296235373 10.0s] dns: exchange failed for detectportal.firefox.com. IN A: context deadline exceeded
+ERROR[0011] [2415036807 10.0s] dns: exchange failed for ipv4only.arpa. IN AAAA: context deadline exceeded
+ERROR[0011] [806807576 10.0s] dns: exchange failed for example.org. IN A: context deadline exceeded
+ERROR[0011] [2933512946 10.0s] dns: exchange failed for bg1.fulli.net. IN A: context deadline exceeded
+ERROR[0011] [476004879 10.0s] dns: exchange failed for bg1.fulli.net. IN AAAA: context deadline exceeded
+ERROR[0011] [3224434760 22ms] dns: exchange failed for detectportal.firefox.com. IN AAAA: dial TLS connection: EOF
+ERROR[0011] [1773393193 2.36s] dns: exchange failed for sync-1-us-west1-g.sync.services.mozilla.com. IN A: dial TLS connection: EOF
+ERROR[0011] [401936767 10.2s] dns: exchange failed for detectportal.firefox.com. IN A: dial TLS connection: EOF
+ERROR[0011] [1296235373 10.3s] dns: exchange failed for detectportal.firefox.com. IN A: dial TLS connection: EOF
+ERROR[0011] [3717844526 1.46s] dns: exchange failed for 2ip.ru. IN AAAA: dial TLS connection: EOF
+ERROR[0011] [401936767 10.2s] dns: exchange failed for detectportal.firefox.com. IN A: dial TLS connection: EOF
+ERROR[0011] [2415036807 10.3s] dns: exchange failed for ipv4only.arpa. IN AAAA: dial TLS connection: EOF
+ERROR[0011] [401936767 10.2s] dns: exchange failed for detectportal.firefox.com. IN AAAA: dial TLS connection: EOF
+ERROR[0011] [3717844526 1.46s] dns: exchange failed for 2ip.ru. IN A: dial TLS connection: EOF
+ERROR[0011] [1840813566 1.46s] dns: exchange failed for 2ip.ru. IN HTTPS: dial TLS connection: EOF
+ERROR[0011] [2752661612 10.3s] dns: exchange failed for example.org. IN A: dial TLS connection: EOF
+ERROR[0011] [2752661612 10.3s] dns: exchange failed for example.org. IN A: dial TLS connection: EOF
+ERROR[0011] [3224434760 22ms] dns: exchange failed for detectportal.firefox.com. IN A: dial TLS connection: EOF
+ERROR[0011] [3178227990 10.2s] dns: exchange failed for detectportal.firefox.com. IN A: dial TLS connection: EOF
+ERROR[0011] [210761884 6.30s] dns: exchange failed for www.youtube.com. IN HTTPS: dial TLS connection: EOF
+ERROR[0011] [401936767 10.2s] dns: exchange failed for detectportal.firefox.com. IN AAAA: dial TLS connection: EOF
+ERROR[0011] [806807576 10.3s] dns: exchange failed for example.org. IN A: dial TLS connection: EOF
+ERROR[0011] [2860173014 7.96s] dns: exchange failed for prod.tahoe-analytics.publishers.advertising.a2z.com. IN AAAA: dial TLS connection: EOF
+ERROR[0011] [2154920068 6.30s] dns: exchange failed for www.youtube.com. IN AAAA: dial TLS connection: EOF
+ERROR[0011] [1773393193 2.36s] dns: exchange failed for sync-1-us-west1-g.sync.services.mozilla.com. IN AAAA: dial TLS connection: EOF
+ERROR[0011] [959380080 9.66s] dns: exchange failed for fulli.net. IN A: dial TLS connection: EOF
+ERROR[0011] [2860173014 7.96s] dns: exchange failed for prod.tahoe-analytics.publishers.advertising.a2z.com. IN A: dial TLS connection: EOF
+ERROR[0011] [2154920068 6.30s] dns: exchange failed for www.youtube.com. IN A: dial TLS connection: EOF
+ERROR[0011] [959380080 9.66s] dns: exchange failed for fulli.net. IN AAAA: dial TLS connection: EOF
+ERROR[0011] [1296235373 10.3s] dns: exchange failed for detectportal.firefox.com. IN AAAA: dial TLS connection: EOF
+ERROR[0011] [2415036807 10.3s] dns: exchange failed for ipv4only.arpa. IN A: dial TLS connection: EOF
+ERROR[0011] [3178227990 10.2s] dns: exchange failed for detectportal.firefox.com. IN A: dial TLS connection: EOF
+ERROR[0021] [682396180 10.1s] dns: exchange failed for detectportal.firefox.com. IN A: context deadline exceeded
+ERROR[0021] [959380080 19.66s] dns: exchange failed for fulli.net. IN A: context deadline exceeded
+ERROR[0021] [3264192704 10.1s] dns: exchange failed for detectportal.firefox.com. IN AAAA: context deadline exceeded
+ERROR[0021] [2860173014 17.96s] dns: exchange failed for prod.tahoe-analytics.publishers.advertising.a2z.com. IN AAAA: context deadline exceeded
+ERROR[0021] [2371692369 15.0s] dns: exchange failed for bg1.fulli.net. IN AAAA: context deadline exceeded
+ERROR[0021] [3264192704 10.1s] dns: exchange failed for detectportal.firefox.com. IN A: context deadline exceeded
+ERROR[0021] [2154920068 16.30s] dns: exchange failed for www.youtube.com. IN AAAA: context deadline exceeded
+ERROR[0021] [2860173014 17.96s] dns: exchange failed for prod.tahoe-analytics.publishers.advertising.a2z.com. IN A: context deadline exceeded
+ERROR[0021] [2448888021 15.0s] dns: exchange failed for bg1.fulli.net. IN A: context deadline exceeded
+ERROR[0021] [2154920068 16.30s] dns: exchange failed for www.youtube.com. IN A: context deadline exceeded
+ERROR[0021] [959380080 19.66s] dns: exchange failed for fulli.net. IN AAAA: context deadline exceeded
+ERROR[0021] [210761884 16.31s] dns: exchange failed for www.youtube.com. IN HTTPS: context deadline exceeded
+ERROR[0021] [2439139184 10.0s] dns: exchange failed for bg1.fulli.net. IN AAAA: context deadline exceeded
+ERROR[0021] [2825437974 10.0s] dns: exchange failed for bg1.fulli.net. IN A: context deadline exceeded
+ERROR[0021] [1490186914 1.34s] dns: exchange failed for www.2ip.ru. IN AAAA: dial TLS connection: EOF
+ERROR[0021] [3690698904 6.30s] dns: exchange failed for www.youtube.com. IN AAAA: dial TLS connection: EOF
+ERROR[0021] [2409255075 6.28s] dns: exchange failed for 2ip.io. IN AAAA: dial TLS connection: EOF
+ERROR[0021] [27145012 6.28s] dns: exchange failed for app.smsverified.com. IN HTTPS: dial TLS connection: EOF
+ERROR[0021] [3779469665 6.28s] dns: exchange failed for fulli.net. IN HTTPS: dial TLS connection: EOF
+ERROR[0021] [119780855 6.28s] dns: exchange failed for duck.ai. IN A: dial TLS connection: EOF
+ERROR[0021] [1773393193 12.36s] dns: exchange failed for sync-1-us-west1-g.sync.services.mozilla.com. IN AAAA: dial TLS connection: EOF
+ERROR[0021] [1840813566 11.46s] dns: exchange failed for 2ip.ru. IN HTTPS: dial TLS connection: EOF
+ERROR[0021] [1876809635 6.28s] dns: exchange failed for app.smsverified.com. IN A: dial TLS connection: EOF
+ERROR[0021] [3760642551 1.41s] dns: exchange failed for www.google-analytics.com. IN AAAA: dial TLS connection: EOF
+ERROR[0021] [647056641 6.28s] dns: exchange failed for 2ip.io. IN HTTPS: dial TLS connection: EOF
+ERROR[0021] [3831684192 6.28s] dns: exchange failed for www.youtube.com. IN HTTPS: dial TLS connection: EOF
+ERROR[0021] [3760642551 1.41s] dns: exchange failed for www.google-analytics.com. IN A: dial TLS connection: EOF
+ERROR[0021] [1319584026 9.65s] dns: exchange failed for fulli.net. IN AAAA: dial TLS connection: EOF
+ERROR[0021] [684927286 7.96s] dns: exchange failed for prod.tahoe-analytics.publishers.advertising.a2z.com. IN AAAA: dial TLS connection: EOF
+ERROR[0021] [3717844526 11.46s] dns: exchange failed for 2ip.ru. IN AAAA: dial TLS connection: EOF
+ERROR[0021] [1716304034 1.42s] dns: exchange failed for www.google-analytics.com. IN HTTPS: dial TLS connection: EOF
+ERROR[0021] [1319584026 9.65s] dns: exchange failed for fulli.net. IN A: dial TLS connection: EOF
+ERROR[0021] [2409255075 6.28s] dns: exchange failed for 2ip.io. IN A: dial TLS connection: EOF
+ERROR[0021] [4006898369 6.28s] dns: exchange failed for support.mozilla.org. IN AAAA: dial TLS connection: EOF
+ERROR[0021] [1774932523 6.28s] dns: exchange failed for support.mozilla.org. IN HTTPS: dial TLS connection: EOF
+ERROR[0021] [1490186914 1.35s] dns: exchange failed for www.2ip.ru. IN A: dial TLS connection: EOF
+ERROR[0021] [4006898369 6.28s] dns: exchange failed for support.mozilla.org. IN A: dial TLS connection: EOF
+ERROR[0021] [3224434760 10.2s] dns: exchange failed for detectportal.firefox.com. IN A: dial TLS connection: EOF
+ERROR[0021] [1773393193 12.37s] dns: exchange failed for sync-1-us-west1-g.sync.services.mozilla.com. IN A: dial TLS connection: EOF
+ERROR[0021] [3246415490 6.28s] dns: exchange failed for duck.ai. IN HTTPS: dial TLS connection: EOF
+ERROR[0021] [1356944865 6.28s] dns: exchange failed for github.com. IN A: dial TLS connection: EOF
