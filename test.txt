@@ -1,1 +1,1 @@
-FATAL[0000] decode config at config.json: outbounds[0].transport: x_padding_bytes cannot be disabled
+FATAL[0000] create service: initialize inbound[0]: legacy inbound fields are deprecated in sing-box 1.11.0 and removed in sing-box 1.13.0, checkout migration: https://sing-box.sagernet.org/migration/#migrate-legacy-inbound-fields-to-rule-actions
