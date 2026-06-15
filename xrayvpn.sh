@@ -1,3 +1,4 @@
+
 #!/bin/bash
 # xrayvpn.sh - быстрая генерация конфигов и управление xray + sing-box (tun)
 #
@@ -32,7 +33,13 @@ SINGBOX_BIN="$DIR/sing-box"
 SOCKS_PORT=1080
 
 gen() {
-    local link="${1:?Нужна vless:// ссылка}"
+    local link="${1:-}"
+    if [ -z "$link" ]; then
+        echo "Вставь vless:// ссылку и нажми Enter:"
+        read -r link
+    fi
+    [ -n "$link" ] || { echo "Ссылка пустая, отмена." >&2; exit 1; }
+
     echo "[*] Генерирую $CONFIG"
     python3 "$DIR/vless2xray.py" "$link" --socks-port "$SOCKS_PORT" -o "$CONFIG"
     echo "[*] Генерирую $SINGBOX_CONF"
@@ -126,7 +133,7 @@ case "${1:-}" in
     status) status ;;
     log) log "${2:-}" ;;
     *)
-        echo "Использование: $0 {gen <vless://...>|start|stop|restart [vless://...]|status|log [xray|singbox]}" >&2
+        echo "Использование: $0 {gen [vless://...]|start|stop|restart [vless://...]|status|log [xray|singbox]}" >&2
         exit 1
         ;;
 esac
