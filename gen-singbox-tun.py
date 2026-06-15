@@ -72,6 +72,7 @@ def build_config(socks_port, interface, mtu, dns_server, ipv6):
         ],
         "route": {
             "auto_detect_interface": True,
+            "default_domain_resolver": "local-dns",
             "rules": [
                 {"action": "sniff"},
                 {"protocol": "dns", "action": "hijack-dns"},
