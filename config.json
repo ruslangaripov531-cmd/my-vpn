@@ -1,23 +1,53 @@
 {
-  "inbounds": [{
-    "port": 443,
-    "protocol": "shadowsocks",
-    "settings": {
-      "method": "aes-256-gcm",
-      "password": "zserfvtidzsm2802!",
-      "network": "tcp,udp"
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "show": false,
-        "dest": "yahoo.com:443",
-        "serverNames": ["yahoo.com"],
-        "privateKey": "ВАШ_НОВЫЙ_PRIVATE_KEY",
-        "shortIds": ["1d977465"]
-      }
+  "log": {
+    "level": "warn",
+    "timestamp": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "singbox-tun",
+      "inet4_address": "172.19.0.1/30",
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "system",
+      "sniff": true,
+      "sniff_override_destination": true
     }
-  }],
-  "outbounds": [{ "protocol": "freedom" }]
+  ],
+  "outbounds": [
+    {
+      "type": "trojan",
+      "tag": "proxy",
+      "server": "31.77.161.238",
+      "server_port": 35061,
+      "password": "npCGHYBWdgELIWS8WmYEd3ZXkRyyQbAcMu8jyIAixqQ=",
+      "transport": {
+        "type": "xhttp",
+        "mode": "auto",
+        "path": "/",
+        "extra": {
+          "xPaddingBytes": "100-1000"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "direct"
+      }
+    ],
+    "final": "proxy"
+  }
 }
