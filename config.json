@@ -26,10 +26,7 @@
       "transport": {
         "type": "xhttp",
         "mode": "auto",
-        "path": "/",
-        "extra": {
-          "xPaddingBytes": "100-1000"
-        }
+        "path": "/"
       }
     },
     {
