@@ -1,57 +1,19 @@
-{
-  "log": {
-    "level": "warn",
-    "timestamp": true
-  },
-  "inbounds": [
-    {
-      "type": "tun",
-      "tag": "tun-in",
-      "interface_name": "singbox-tun",
-      "address": [
-        "172.19.0.1/30"
-      ],
-      "auto_route": true,
-      "strict_route": true,
-      "stack": "system"
-    }
-  ],
-  "outbounds": [
-    {
-      "type": "trojan",
-      "tag": "proxy",
-      "server": "31.77.161.238",
-      "server_port": 35061,
-      "password": "npCGHYBWdgELIWS8WmYEd3ZXkRyyQbAcMu8jyIAixqQ=",
-      "transport": {
-        "type": "xhttp",
-        "mode": "auto",
-        "path": "/",
-        "x_padding_bytes": "100-1000"
-      }
-    },
-    {
-      "type": "direct",
-      "tag": "direct"
-    },
-    {
-      "type": "block",
-      "tag": "block"
-    }
-  ],
-  "route": {
-    "rules": [
-      {
-        "inbound": [
-          "tun-in"
-        ],
-        "action": "sniff"
-      },
-      {
-        "protocol": "dns",
-        "outbound": "direct"
-      }
-    ],
-    "final": "proxy"
-  }
-}
++0300 2026-06-20 08:08:10 ERROR [3958101617 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:10 ERROR [1148090378 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:10 ERROR [3135533333 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:10 ERROR [650033344 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:10 ERROR [3564365012 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:10 ERROR [1596304770 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:10 ERROR [33947403 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:10 ERROR [1092752113 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:10 ERROR [4047934083 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:10 ERROR [595475399 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:10 ERROR [2647693143 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:10 ERROR [1233923927 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:11 ERROR network: update interface: route ip+net: netlinkrib: too many open files
++0300 2026-06-20 08:08:11 ERROR [2985384961 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:11 ERROR [3314697676 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:11 ERROR [1385058800 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:11 ERROR [1757875137 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:11 ERROR [3843017332 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
++0300 2026-06-20 08:08:11 ERROR [2098631212 0ms] connection: listen packet connection using  using outbound/direct[direct]: listen udp4 :0: socket: too many open files
