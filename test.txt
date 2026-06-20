@@ -1,1 +1,57 @@
-FATAL[0000] create service: initialize inbound[0]: legacy inbound fields are deprecated in sing-box 1.11.0 and removed in sing-box 1.13.0, checkout migration: https://sing-box.sagernet.org/migration/#migrate-legacy-inbound-fields-to-rule-actions
+{
+  "log": {
+    "level": "warn",
+    "timestamp": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "singbox-tun",
+      "address": [
+        "172.19.0.1/30"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "system"
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "trojan",
+      "tag": "proxy",
+      "server": "31.77.161.238",
+      "server_port": 35061,
+      "password": "npCGHYBWdgELIWS8WmYEd3ZXkRyyQbAcMu8jyIAixqQ=",
+      "transport": {
+        "type": "xhttp",
+        "mode": "auto",
+        "path": "/",
+        "x_padding_bytes": "100-1000"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "inbound": [
+          "tun-in"
+        ],
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "outbound": "direct"
+      }
+    ],
+    "final": "proxy"
+  }
+}
